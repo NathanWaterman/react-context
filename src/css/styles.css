@@ -1,0 +1,142 @@
+/* GLOBAL STYLES */
+body,
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #3f4143;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+	font-weight: 200;
+}
+h1 {
+	font-size: 3rem;
+}
+.high {
+	color: #2ab75f !important;
+	font-weight: 700;
+}
+.low {
+	color: #f79391 !important;
+	font-weight: 700;
+}
+
+.arrow-up {
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+
+	border-bottom: 10px solid #2ab75f;
+	float: left;
+	margin-right: 6px;
+	position: relative;
+	top: 4px;
+}
+
+.arrow-down {
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+
+	border-top: 10px solid #f79391;
+	float: left;
+	margin-right: 6px;
+	position: relative;
+	top: 4px;
+}
+
+/*SEGMENT UI OVERRIDE*/
+.ui.column.grid > [class*="three wide"].column,
+.ui.grid > .column.row > [class*="three wide"].column,
+.ui.grid > .row > [class*="three wide"].column,
+.ui.grid > [class*="three wide"].column {
+	width: 19.75% !important;
+}
+.ui.input,
+.ui.input > input {
+	color: #13d5b0;
+}
+.ui.input.focus > input,
+.ui.input > input:focus {
+	color: #13d5b0;
+}
+.ui.list .list > .item a.header,
+.ui.list > .item a.header {
+	color: #12b596 !important;
+}
+.ui.list .list > .item a.header:hover,
+.ui.list > .item a.header:hover {
+	color: #12b596 !important;
+}
+.ui.card,
+.ui.cards > .card {
+	background: #1b1c1d;
+	box-shadow: 0 1px 3px 0 #1b1c1d, 0 0 0 1px #1b1c1d;
+}
+.ui.grid > .row {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.ui.list .list > .item .description,
+.ui.list > .item .description {
+	color: #cecece;
+	font-weight: 500 !important;
+	line-height: 1.25em;
+}
+.ui.table {
+	color: #cecece;
+}
+
+.ui.message:first-child{
+	margin-top:1em;
+}
+
+/* LOADING OVERRIDE */
+.loading-view {
+	height: 100vh;
+}
+
+/** Responsive styles **/
+/** FORCE SCREEN TO STACK AT 992px **/
+@media only screen and (max-width: 992px) {
+	.ui.stackable.grid > .row > .column {
+		width: 100% !important;
+		margin: 0 0 !important;
+		box-shadow: none !important;
+		padding: 1rem 1rem !important;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.mobile-hidden {
+		display: none;
+	}
+	.main-view{
+		margin-bottom: 3em;
+	}
+}
+@media only screen and (max-width: 650px) {
+	.news-container .news-list-container > .item > img.image + .content, .ui.list > .item > img.image + .content{
+		width: 90% !important;
+	}
+}
+@media only screen and (max-width: 630px) {
+	h1 {
+		font-size: 7vw;
+	}
+	h4 {
+		font-size: 2.7vw !important;
+	}
+}
+@media only screen and (max-width:525px){
+	.ui.grid>.row>[class*="four wide"].column{
+		width:29% !important;
+	}
+}
