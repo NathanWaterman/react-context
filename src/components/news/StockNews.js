@@ -1,5 +1,4 @@
 import React, { useContext, useReducer, useState, useEffect } from 'react'
-import UserContext, { Provider, Consumer } from '../ReactContextStore';
 import "./news.css";
 
 

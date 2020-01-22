@@ -1,6 +1,6 @@
 import React, { useReducer, useContext, useState, useEffect } from 'react'
 import { stockInfo, stockLogo, stockNews, stockChart } from "../api/marketData";
-import UserContext, { Provider, Consumer } from './ReactContextStore';
+import { Provider, Consumer } from '../contexts/ReactContextStore';
 import SearchBar from '../components/search/SearchBar';
 import StockNews from '../components/news/StockNews';
 import StockQuote from '../components/quote/StockQuote';
@@ -8,7 +8,7 @@ import StockChart from '../components/chart/StockChart';
 import ErrorUI from "./Error";
 
 
-import { reducer, initialState } from './AppReducers';
+import { reducer, initialState } from '../reducers/AppReducers';
 
 
 const App = () => {
